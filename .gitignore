@@ -1,0 +1,35 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+**/build/
+!src/**/build/
+local.properties
+
+# Kotlin/Compose Multiplatform
+.kotlin/
+.externalNativeBuild/
+.cxx/
+captures/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# JetBrains Fleet (если ты использовал)
+.fleet/
+
+# Logs & temp files
+*.log
+*.tmp
+
+# JetBrains Compose Desktop
+composeApp/build/
+composeApp/out/
+composeApp/.gradle/
+
+# Gradle Wrapper
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
