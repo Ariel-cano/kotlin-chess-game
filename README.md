@@ -1,18 +1,29 @@
-This is a Kotlin Multiplatform project targeting Android, Web, Desktop.
+# Chess Game - Kotlin Multiplatform
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+This repository contains a chess game built with **Kotlin Multiplatform**, primarily for **Android**. The project follows best practices like **object-oriented programming (OOP)**, **functional programming**, and **test-driven development (TDD)**.
 
+The game logic includes chess rules, movement validation, castling, and pawn promotion. The UI is developed using **Jetpack Compose**, ensuring a modern and flexible experience.
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+## Features
+- Chess logic with movement validation  
+- Special moves like **castling** and **pawn promotion**  
+- **Jetpack Compose** UI  
+- **Kotlin DSL** for board configuration  
+- **Test-driven development (TDD)**  
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+## What I Learned
+During the development of this project, I improved my skills in:
+- **Kotlin Multiplatform** for cross-platform development  
+- **Design patterns** like Factory and Builder  
+- **Jetpack Compose** for declarative UI  
+- **Test-driven development (TDD)** for reliable logic  
+- **Functional programming** and DSL design in Kotlin  
 
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+## Future Plans
+- Add AI opponent  
+- Improve UI animations  
+- iOS and Desktop support  
+
+---
+
+Feel free to contribute or suggest improvements.  
