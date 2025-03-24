@@ -5,6 +5,7 @@ import androidx.compose.ui.unit.IntOffset
 import canProtectKing
 import com.ariel.chess.pieces.King
 import com.ariel.chess.pieces.Piece
+import com.ariel.chess.settings.SoundManager
 import isCheckmate
 import isStalemate
 import isTheKingInThreat
@@ -43,6 +44,8 @@ class Board {
             if (!isAvailableMove(x, y)) return
             if (piece.color != playerTurn) return
 
+            SoundManager.playMoveSound()
+
             val king = pieces.firstOrNull { it is King && it.color == piece.color } ?: return
             val originalPosition = piece.position
             val targetPosition = IntOffset(x, y)
@@ -57,6 +60,7 @@ class Board {
             }
             _pieces.clear()
             _pieces.addAll(updatedPieces)
+
 
 
             clearSelection()
